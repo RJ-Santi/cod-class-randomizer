@@ -1,0 +1,22 @@
+body {
+    font-family:"impact", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(call-of-duty.jpg);
+    padding-top: 0px;
+}
+
+h1 {
+    color: rgba(67, 74, 82);
+    text-align: left;
+    font-size: 65px;
+}
+
+button {
+    font-family: "Impact", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 25px;
+    font-size: 15px;
+}
+
+.randomizers {
+    width: 25%;
+    background-image: linear-gradient(to right, rgba(29, 29, 31), rgba(87, 94, 100))
+}
