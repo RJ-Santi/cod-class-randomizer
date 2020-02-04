@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Warfare Class Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CLASS RANDOMIZER</h1>
+    </header>
+
+    <div class="randomizers">
+  <!--Assault Rifle Randomizer-->
+        <div class="assaultrifle">
+            <button type="randomAssaultRifle" onclick="randomAssaultRifle()">Random Assault Rifle</button>
+            <input name="randomAssaultRifle" id="randomAssaultRifle">
+        </div>
+
+        <script class="assaultrifle">
+            var assaultrifle = Array("M4A1", "FAL", "FR 5.56", "M13", "FN Scar 17S", "AK-47", "Oden", "Kilo 141", "RAM");
+
+            function randomAssaultRifle() {
+                var randomAssaultRifle = assaultrifle[Math.floor(Math.random() * assaultrifle.length)];
+                document.getElementById('randomAssaultRifle').value = randomAssaultRifle;
+            }
+        </script>
+    
+    <!--Sniper Randomizer-->
+    <div class="sniper/marksman">
+        <button type="randomSniper" onclick="randomSniper()">Random Sniper</button>
+        <input name="randomSniper" id="randomSniper">
+    </div>
+
+    <script class="sniper/marksman">
+        var sniper = Array("Draganov", "HDR", "AX-50", "EBR-14", "Kar98k", "MK2 Carbine");
+
+        function randomSniper() {
+            var randomSniper = sniper[Math.floor(Math.random() * sniper.length)];
+            document.getElementById('randomSniper').value = randomSniper;
+        }
+    </script>
+
+    <!--Random Submachine Gun-->
+        <div class="submachineGun">
+            <button type="randomSub" onclick="randomSub()">Random Submachine Gun</button>
+            <input name="randomSub" id="randomSub">
+        </div>
+
+        <script class="submachineGun">
+            var sub = Array("P90", "MP5", "MP7", "AUG", "PP19 Bizon", "Uzi");
+
+            function randomSub() {
+                var randomSub = sub[Math.floor(Math.random() * sub.length)];
+                document.getElementById('randomSub').value = randomSub;
+            }
+        </script>
+
+    <!--Random Secondary-->
+        <div class="secondary">
+            <button type="randomSecondary" onclick="randomSecondary()">Random Secondary</button>
+            <input name="randomSecondary" id="randomSecondary">
+        </div>
+
+        <script class="secondary">
+            var secondary = Array("Knife", "Riot Shield", "RPG-7", "PILA", "JOKR", "Strela-P", "M19", "X16", "1911", ".357", ".50GS");
+
+            function randomSecondary() {
+                var randomSecondary = secondary[Math.floor(Math.random() * secondary.length)];
+                document.getElementById('randomSecondary').value = randomSecondary;
+            }
+        </script>
+    </div>
+</body>
+</html>
